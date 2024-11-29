@@ -1,0 +1,78 @@
+#XSPEC version: 12.12.0
+#Build Date/Time: Sat Jan  7 17:22:54 2023
+#
+!XSPEC12> show par
+#
+#Parameters defined:
+#========================================================================
+#Model cflux<1>*cutoffpl<2>  + cflux<3>*grbmbb<4> Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#                           Data group: 1
+#   1    1   cflux      Emin       keV      8.00000      frozen
+#   2    1   cflux      Emax       keV      900.000      frozen
+#   3    1   cflux      lg10Flux   cgs      -7.26361     +/-  0.569683     
+#   4    2   cutoffpl   PhoIndex            -0.331737    frozen
+#   5    2   cutoffpl   HighECut   keV      16.1570      frozen
+#   6    2   cutoffpl   norm                1.00000E+24  +/-  2.18126E+37  
+#   7    3   cflux      Emin       keV      8.00000      frozen
+#   8    3   cflux      Emax       keV      900.000      frozen
+#   9    3   cflux      lg10Flux   cgs      -6.43944     +/-  2.85354E-02  
+#  10    4   grbmbb     Gamma               320.810      frozen
+#  11    4   grbmbb     Alpha               0.670000     frozen
+#  12    4   grbmbb     R0         cm(log)  11.4987      frozen
+#  13    4   grbmbb     T0         keV      632.768      frozen
+#  14    4   grbmbb     ti         (scale)  1.00000E-06  
+#  15    4   grbmbb     tf         (scale)  43.0000      
+#  16    4   grbmbb     D          (scale)  1.00000E-02  
+#  17    4   grbmbb     norm                1.98766E+19  +/-  1.29119E+37  
+#                           Data group: 2
+#  18    1   cflux      Emin       keV      8.00000      = p1
+#  19    1   cflux      Emax       keV      900.000      = p2
+#  20    1   cflux      lg10Flux   cgs      -7.27475     +/-  1.10112      
+#  21    2   cutoffpl   PhoIndex            -0.331737    = p4
+#  22    2   cutoffpl   HighECut   keV      16.1570      = p5
+#  23    2   cutoffpl   norm                3.86334E+16  +/-  4.39543E+37  
+#  24    3   cflux      Emin       keV      8.00000      = p7
+#  25    3   cflux      Emax       keV      900.000      = p8
+#  26    3   cflux      lg10Flux   cgs      -6.46069     +/-  1.65828E-02  
+#  27    4   grbmbb     Gamma               320.810      = p10
+#  28    4   grbmbb     Alpha               0.670000     = p11
+#  29    4   grbmbb     R0         cm(log)  11.4987      = p12
+#  30    4   grbmbb     T0         keV      632.768      = p13
+#  31    4   grbmbb     ti         (scale)  1.00000E-06  = p14
+#  32    4   grbmbb     tf         (scale)  43.0000      = p15
+#  33    4   grbmbb     D          (scale)  1.00000E-02  = p16
+#  34    4   grbmbb     norm                1.00000E+24  +/-  2.85747E+37  
+#                           Data group: 3
+#  35    1   cflux      Emin       keV      8.00000      = p1
+#  36    1   cflux      Emax       keV      900.000      = p2
+#  37    1   cflux      lg10Flux   cgs      -7.30987     +/-  0.949257     
+#  38    2   cutoffpl   PhoIndex            -0.331737    = p4
+#  39    2   cutoffpl   HighECut   keV      16.1570      = p5
+#  40    2   cutoffpl   norm                1.00000E+24  +/-  3.95738E+37  
+#  41    3   cflux      Emin       keV      8.00000      = p7
+#  42    3   cflux      Emax       keV      900.000      = p8
+#  43    3   cflux      lg10Flux   cgs      -6.44528     +/-  3.91715E-02  
+#  44    4   grbmbb     Gamma               320.810      = p10
+#  45    4   grbmbb     Alpha               0.670000     = p11
+#  46    4   grbmbb     R0         cm(log)  11.4987      = p12
+#  47    4   grbmbb     T0         keV      632.768      = p13
+#  48    4   grbmbb     ti         (scale)  1.00000E-06  = p14
+#  49    4   grbmbb     tf         (scale)  43.0000      = p15
+#  50    4   grbmbb     D          (scale)  1.00000E-02  = p16
+#  51    4   grbmbb     norm                1.00000E+24  +/-  2.46454E+37  
+#________________________________________________________________________
+#
+#
+!XSPEC12> err 3 9 20 26 37 43
+# Parameter   Confidence Range (2.706)
+#     3     -7.31495     -7.21644    (-0.051465,0.0470466)
+#     9     -6.46219     -6.41796    (-0.0227998,0.0214335)
+#    20     -7.36166     -7.20105    (-0.0873409,0.0732738)
+#    26     -6.48656     -6.43479    (-0.0261291,0.0256446)
+#    37     -7.38546     -7.24584    (-0.0756038,0.0640215)
+#    43     -6.46902     -6.42181    (-0.0238725,0.0233402)
+#
+!XSPEC12> log none
+#
