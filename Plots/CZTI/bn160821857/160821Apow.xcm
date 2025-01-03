@@ -1,0 +1,70 @@
+statistic pgstat
+data 1:1 /home/gauravbhoir147/FermiData/GRB_project_PolUnpol_spec/CZTI/bn160821857/spec/bn160821857_n6_srcspectra.pha{1}
+response  1:1 /home/gauravbhoir147/FermiData/GRB_project_PolUnpol_spec/CZTI/bn160821857/spec/bn160821857_n6_weightedrsp.rsp{1}
+backgrnd 1 /home/gauravbhoir147/FermiData/GRB_project_PolUnpol_spec/CZTI/bn160821857/spec/bn160821857_n6_bkgspectra.bak{1}
+
+data 2:2 /home/gauravbhoir147/FermiData/GRB_project_PolUnpol_spec/CZTI/bn160821857/spec/bn160821857_n7_srcspectra.pha{1}
+response  1:2 /home/gauravbhoir147/FermiData/GRB_project_PolUnpol_spec/CZTI/bn160821857/spec/bn160821857_n7_weightedrsp.rsp{1}
+backgrnd 2 /home/gauravbhoir147/FermiData/GRB_project_PolUnpol_spec/CZTI/bn160821857/spec/bn160821857_n7_bkgspectra.bak{1}
+
+data 3:3 /home/gauravbhoir147/FermiData/GRB_project_PolUnpol_spec/CZTI/bn160821857/spec/bn160821857_n9_srcspectra.pha{1}
+response  1:3 /home/gauravbhoir147/FermiData/GRB_project_PolUnpol_spec/CZTI/bn160821857/spec/bn160821857_n9_weightedrsp.rsp{1}
+backgrnd 3 /home/gauravbhoir147/FermiData/GRB_project_PolUnpol_spec/CZTI/bn160821857/spec/bn160821857_n9_bkgspectra.bak{1}
+ignore 1:1-3,21-27,124-128 2:1-4,22-28,123-128 3:1-4,22-28,124-128
+
+method leven 10 0.01
+abund angr
+xsect vern
+cosmo 70 0 0.73
+xset delta 0.01
+systematic 0
+model  cflux*powerlaw +  cflux*grbmbb
+              8       -0.1          0          0      1e+06      1e+06
+            900       -0.1          0          0      1e+06      1e+06
+       -5.05254       0.01       -100       -100        100        100
+        1.22195      -0.01         -3         -2          9         10
+    4.37055e+16       0.01          0          0      1e+20      1e+24
+              8       -0.1          0          0      1e+06      1e+06
+            900       -0.1          0          0      1e+06      1e+06
+       -5.79012       0.01       -100       -100        100        100
+            100        -10        100        100       1800       1800
+       0.532934      -0.01       0.01       0.01       0.67       0.67
+        11.0184       -0.1         10         10         14         14
+        490.308       -0.5        0.1        0.1       2000       2000
+            110
+            170
+           0.01
+      6.994e+18       0.01          0          0      1e+20      1e+24
+= p1
+= p2
+       -5.05791       0.01       -100       -100        100        100
+= p4
+    4.60101e+18       0.01          0          0      1e+20      1e+24
+= p6
+= p7
+       -5.86566       0.01       -100       -100        100        100
+= p9
+= p10
+= p11
+= p12
+= p13
+= p14
+= p15
+    8.35863e+17       0.01          0          0      1e+20      1e+24
+= p1
+= p2
+       -5.04425       0.01       -100       -100        100        100
+= p4
+    7.89224e+16       0.01          0          0      1e+20      1e+24
+= p6
+= p7
+       -5.86213       0.01       -100       -100        100        100
+= p9
+= p10
+= p11
+= p12
+= p13
+= p14
+= p15
+    8.72352e+17       0.01          0          0      1e+20      1e+24
+bayes off

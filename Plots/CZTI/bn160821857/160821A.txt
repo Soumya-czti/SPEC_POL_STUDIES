@@ -1,0 +1,564 @@
+#XSPEC version: 12.14.0h
+#Build Date/Time: Fri Jun 14 22:36:15 2024
+#
+!XSPEC12> err 3 9 
+# Parameter   Confidence Range (2.706)
+#     3     -5.02699     -5.02325    (-0.0018756,0.00186818)
+#     9     -5.66716     -5.64151    (-0.0130184,0.0126338)
+#
+!XSPEC12> show par
+#
+#Parameters defined:
+#========================================================================
+#Model cflux<1>*cutoffpl<2>  + cflux<3>*grbmbb<4> Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#                           Data group: 1
+#   1    1   cflux      Emin       keV      8.00000      frozen
+#   2    1   cflux      Emax       keV      900.000      frozen
+#   3    1   cflux      lg10Flux   cgs      -5.02512     +/-  8.33544E-03  
+#   4    2   cutoffpl   PhoIndex            0.850000     frozen
+#   5    2   cutoffpl   HighECut   keV      370.000      frozen
+#   6    2   cutoffpl   norm                2.51738E+18  +/-  1.29705E+36  
+#   7    3   cflux      Emin       keV      8.00000      frozen
+#   8    3   cflux      Emax       keV      900.000      frozen
+#   9    3   cflux      lg10Flux   cgs      -5.65415     +/-  3.12592E-02  
+#  10    4   grbmbb     Gamma               685.000      frozen
+#  11    4   grbmbb     Alpha               0.520000     frozen
+#  12    4   grbmbb     R0         cm(log)  12.4100      frozen
+#  13    4   grbmbb     T0         keV      1018.00      frozen
+#  14    4   grbmbb     ti         (scale)  110.000      
+#  15    4   grbmbb     tf         (scale)  170.000      
+#  16    4   grbmbb     D          (scale)  1.00000E-02  
+#  17    4   grbmbb     norm                1.00000E+24  +/-  6.97601E+36  
+#                           Data group: 2
+#  18    1   cflux      Emin       keV      8.00000      = p1
+#  19    1   cflux      Emax       keV      900.000      = p2
+#  20    1   cflux      lg10Flux   cgs      -5.02512     = p3
+#  21    2   cutoffpl   PhoIndex            0.850000     = p4
+#  22    2   cutoffpl   HighECut   keV      370.000      = p5
+#  23    2   cutoffpl   norm                1.00000E+24  +/-  1.30349E+36  
+#  24    3   cflux      Emin       keV      8.00000      = p7
+#  25    3   cflux      Emax       keV      900.000      = p8
+#  26    3   cflux      lg10Flux   cgs      -5.65415     = p9
+#  27    4   grbmbb     Gamma               685.000      = p10
+#  28    4   grbmbb     Alpha               0.520000     = p11
+#  29    4   grbmbb     R0         cm(log)  12.4100      = p12
+#  30    4   grbmbb     T0         keV      1018.00      = p13
+#  31    4   grbmbb     ti         (scale)  110.000      = p14
+#  32    4   grbmbb     tf         (scale)  170.000      = p15
+#  33    4   grbmbb     D          (scale)  1.00000E-02  = p16
+#  34    4   grbmbb     norm                1.00000E+24  +/-  7.01263E+36  
+#                           Data group: 3
+#  35    1   cflux      Emin       keV      8.00000      = p1
+#  36    1   cflux      Emax       keV      900.000      = p2
+#  37    1   cflux      lg10Flux   cgs      -5.02512     = p3
+#  38    2   cutoffpl   PhoIndex            0.850000     = p4
+#  39    2   cutoffpl   HighECut   keV      370.000      = p5
+#  40    2   cutoffpl   norm                1.00000E+24  +/-  1.29675E+36  
+#  41    3   cflux      Emin       keV      8.00000      = p7
+#  42    3   cflux      Emax       keV      900.000      = p8
+#  43    3   cflux      lg10Flux   cgs      -5.65415     = p9
+#  44    4   grbmbb     Gamma               685.000      = p10
+#  45    4   grbmbb     Alpha               0.520000     = p11
+#  46    4   grbmbb     R0         cm(log)  12.4100      = p12
+#  47    4   grbmbb     T0         keV      1018.00      = p13
+#  48    4   grbmbb     ti         (scale)  110.000      = p14
+#  49    4   grbmbb     tf         (scale)  170.000      = p15
+#  50    4   grbmbb     D          (scale)  1.00000E-02  = p16
+#  51    4   grbmbb     norm                1.00000E+24  +/-  6.91404E+36  
+#________________________________________________________________________
+#
+#
+!XSPEC12> err 3 9 20 26 37 43
+#*** Parameter 20 is not a variable model parameter and no confidence range will be calculated.
+#*** Parameter 26 is not a variable model parameter and no confidence range will be calculated.
+#*** Parameter 37 is not a variable model parameter and no confidence range will be calculated.
+#*** Parameter 43 is not a variable model parameter and no confidence range will be calculated.
+# Parameter   Confidence Range (2.706)
+#     3     -5.02699     -5.02325    (-0.0018728,0.00186784)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -5.64166, -5.64159
+#and delta stat 2.67832, 2.73789
+#but latest trial -5.64163 gives 2.65228
+#Suggest that you check this result using the steppar command.
+#     9     -5.66714     -5.64163    (-0.0129982,0.0125187)
+#
+!XSPEC12> show par
+#
+#Parameters defined:
+#========================================================================
+#Model cflux<1>*cutoffpl<2>  + cflux<3>*grbmbb<4> Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#                           Data group: 1
+#   1    1   cflux      Emin       keV      8.00000      frozen
+#   2    1   cflux      Emax       keV      900.000      frozen
+#   3    1   cflux      lg10Flux   cgs      -5.02512     +/-  8.33544E-03  
+#   4    2   cutoffpl   PhoIndex            0.850000     frozen
+#   5    2   cutoffpl   HighECut   keV      370.000      frozen
+#   6    2   cutoffpl   norm                8.90288E+18  +/-  1.29705E+36  
+#   7    3   cflux      Emin       keV      8.00000      frozen
+#   8    3   cflux      Emax       keV      900.000      frozen
+#   9    3   cflux      lg10Flux   cgs      -5.65415     +/-  3.12592E-02  
+#  10    4   grbmbb     Gamma               685.000      frozen
+#  11    4   grbmbb     Alpha               0.520000     frozen
+#  12    4   grbmbb     R0         cm(log)  12.4100      frozen
+#  13    4   grbmbb     T0         keV      1018.00      frozen
+#  14    4   grbmbb     ti         (scale)  110.000      
+#  15    4   grbmbb     tf         (scale)  170.000      
+#  16    4   grbmbb     D          (scale)  1.00000E-02  
+#  17    4   grbmbb     norm                1.00000E+24  +/-  6.97601E+36  
+#                           Data group: 2
+#  18    1   cflux      Emin       keV      8.00000      = p1
+#  19    1   cflux      Emax       keV      900.000      = p2
+#  20    1   cflux      lg10Flux   cgs      -5.02512     = p3
+#  21    2   cutoffpl   PhoIndex            0.850000     = p4
+#  22    2   cutoffpl   HighECut   keV      370.000      = p5
+#  23    2   cutoffpl   norm                1.00000E+24  +/-  1.30349E+36  
+#  24    3   cflux      Emin       keV      8.00000      = p7
+#  25    3   cflux      Emax       keV      900.000      = p8
+#  26    3   cflux      lg10Flux   cgs      -5.65415     = p9
+#  27    4   grbmbb     Gamma               685.000      = p10
+#  28    4   grbmbb     Alpha               0.520000     = p11
+#  29    4   grbmbb     R0         cm(log)  12.4100      = p12
+#  30    4   grbmbb     T0         keV      1018.00      = p13
+#  31    4   grbmbb     ti         (scale)  110.000      = p14
+#  32    4   grbmbb     tf         (scale)  170.000      = p15
+#  33    4   grbmbb     D          (scale)  1.00000E-02  = p16
+#  34    4   grbmbb     norm                1.00000E+24  +/-  7.01263E+36  
+#                           Data group: 3
+#  35    1   cflux      Emin       keV      8.00000      = p1
+#  36    1   cflux      Emax       keV      900.000      = p2
+#  37    1   cflux      lg10Flux   cgs      -5.02512     = p3
+#  38    2   cutoffpl   PhoIndex            0.850000     = p4
+#  39    2   cutoffpl   HighECut   keV      370.000      = p5
+#  40    2   cutoffpl   norm                1.00000E+24  +/-  1.29675E+36  
+#  41    3   cflux      Emin       keV      8.00000      = p7
+#  42    3   cflux      Emax       keV      900.000      = p8
+#  43    3   cflux      lg10Flux   cgs      -5.65415     = p9
+#  44    4   grbmbb     Gamma               685.000      = p10
+#  45    4   grbmbb     Alpha               0.520000     = p11
+#  46    4   grbmbb     R0         cm(log)  12.4100      = p12
+#  47    4   grbmbb     T0         keV      1018.00      = p13
+#  48    4   grbmbb     ti         (scale)  110.000      = p14
+#  49    4   grbmbb     tf         (scale)  170.000      = p15
+#  50    4   grbmbb     D          (scale)  1.00000E-02  = p16
+#  51    4   grbmbb     norm                1.00000E+24  +/-  6.91404E+36  
+#________________________________________________________________________
+#
+#
+!XSPEC12> newpar 20 -0.5
+#
+#Fit statistic  : Chi-Squared                  240.62     using 113 bins, spectrum 1, group 1.
+#                 Chi-Squared              8.580712e+13     using 111 bins, spectrum 2, group 2.
+#                 Chi-Squared                  191.85     using 112 bins, spectrum 3, group 3.
+#Total fit statistic                       8.580712e+13     with 327 d.o.f.
+#
+#Test statistic : Chi-Squared              8.580712e+13     using 336 bins.
+# Null hypothesis probability of 0.000000e+00 with 327 degrees of freedom
+# Current data and model not fit yet.
+#
+!XSPEC12> newpar 26 -5.6
+#
+#Fit statistic  : Chi-Squared                  240.62     using 113 bins, spectrum 1, group 1.
+#                 Chi-Squared              8.580719e+13     using 111 bins, spectrum 2, group 2.
+#                 Chi-Squared                  191.85     using 112 bins, spectrum 3, group 3.
+#Total fit statistic                       8.580719e+13     with 326 d.o.f.
+#
+#Test statistic : Chi-Squared              8.580719e+13     using 336 bins.
+# Null hypothesis probability of 0.000000e+00 with 326 degrees of freedom
+# Current data and model not fit yet.
+#
+!XSPEC12> show par
+#
+#Parameters defined:
+#========================================================================
+#Model cflux<1>*cutoffpl<2>  + cflux<3>*grbmbb<4> Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#                           Data group: 1
+#   1    1   cflux      Emin       keV      8.00000      frozen
+#   2    1   cflux      Emax       keV      900.000      frozen
+#   3    1   cflux      lg10Flux   cgs      -5.02512     +/-  8.33544E-03  
+#   4    2   cutoffpl   PhoIndex            0.850000     frozen
+#   5    2   cutoffpl   HighECut   keV      370.000      frozen
+#   6    2   cutoffpl   norm                8.90288E+18  +/-  1.29705E+36  
+#   7    3   cflux      Emin       keV      8.00000      frozen
+#   8    3   cflux      Emax       keV      900.000      frozen
+#   9    3   cflux      lg10Flux   cgs      -5.65415     +/-  3.12592E-02  
+#  10    4   grbmbb     Gamma               685.000      frozen
+#  11    4   grbmbb     Alpha               0.520000     frozen
+#  12    4   grbmbb     R0         cm(log)  12.4100      frozen
+#  13    4   grbmbb     T0         keV      1018.00      frozen
+#  14    4   grbmbb     ti         (scale)  110.000      
+#  15    4   grbmbb     tf         (scale)  170.000      
+#  16    4   grbmbb     D          (scale)  1.00000E-02  
+#  17    4   grbmbb     norm                1.00000E+24  +/-  6.97601E+36  
+#                           Data group: 2
+#  18    1   cflux      Emin       keV      8.00000      = p1
+#  19    1   cflux      Emax       keV      900.000      = p2
+#  20    1   cflux      lg10Flux   cgs      -0.500000    +/-  0.0          
+#  21    2   cutoffpl   PhoIndex            0.850000     = p4
+#  22    2   cutoffpl   HighECut   keV      370.000      = p5
+#  23    2   cutoffpl   norm                1.00000E+24  +/-  1.30349E+36  
+#  24    3   cflux      Emin       keV      8.00000      = p7
+#  25    3   cflux      Emax       keV      900.000      = p8
+#  26    3   cflux      lg10Flux   cgs      -5.60000     +/-  0.0          
+#  27    4   grbmbb     Gamma               685.000      = p10
+#  28    4   grbmbb     Alpha               0.520000     = p11
+#  29    4   grbmbb     R0         cm(log)  12.4100      = p12
+#  30    4   grbmbb     T0         keV      1018.00      = p13
+#  31    4   grbmbb     ti         (scale)  110.000      = p14
+#  32    4   grbmbb     tf         (scale)  170.000      = p15
+#  33    4   grbmbb     D          (scale)  1.00000E-02  = p16
+#  34    4   grbmbb     norm                1.00000E+24  +/-  7.01263E+36  
+#                           Data group: 3
+#  35    1   cflux      Emin       keV      8.00000      = p1
+#  36    1   cflux      Emax       keV      900.000      = p2
+#  37    1   cflux      lg10Flux   cgs      -5.02512     = p3
+#  38    2   cutoffpl   PhoIndex            0.850000     = p4
+#  39    2   cutoffpl   HighECut   keV      370.000      = p5
+#  40    2   cutoffpl   norm                1.00000E+24  +/-  1.29675E+36  
+#  41    3   cflux      Emin       keV      8.00000      = p7
+#  42    3   cflux      Emax       keV      900.000      = p8
+#  43    3   cflux      lg10Flux   cgs      -5.65415     = p9
+#  44    4   grbmbb     Gamma               685.000      = p10
+#  45    4   grbmbb     Alpha               0.520000     = p11
+#  46    4   grbmbb     R0         cm(log)  12.4100      = p12
+#  47    4   grbmbb     T0         keV      1018.00      = p13
+#  48    4   grbmbb     ti         (scale)  110.000      = p14
+#  49    4   grbmbb     tf         (scale)  170.000      = p15
+#  50    4   grbmbb     D          (scale)  1.00000E-02  = p16
+#  51    4   grbmbb     norm                1.00000E+24  +/-  6.91404E+36  
+#________________________________________________________________________
+#
+#
+!XSPEC12> newpar 37 -5
+#
+#Fit statistic  : Chi-Squared                  240.62     using 113 bins, spectrum 1, group 1.
+#                 Chi-Squared              8.580719e+13     using 111 bins, spectrum 2, group 2.
+#                 Chi-Squared                  458.74     using 112 bins, spectrum 3, group 3.
+#Total fit statistic                       8.580719e+13     with 325 d.o.f.
+#
+#Test statistic : Chi-Squared              8.580719e+13     using 336 bins.
+# Null hypothesis probability of 0.000000e+00 with 325 degrees of freedom
+# Current data and model not fit yet.
+#
+!XSPEC12> newpar 43 -5.6
+#
+#Fit statistic  : Chi-Squared                  240.62     using 113 bins, spectrum 1, group 1.
+#                 Chi-Squared              8.580719e+13     using 111 bins, spectrum 2, group 2.
+#                 Chi-Squared                  565.90     using 112 bins, spectrum 3, group 3.
+#Total fit statistic                       8.580719e+13     with 324 d.o.f.
+#
+#Test statistic : Chi-Squared              8.580719e+13     using 336 bins.
+# Null hypothesis probability of 0.000000e+00 with 324 degrees of freedom
+# Current data and model not fit yet.
+#
+!XSPEC12> fit
+#                                   Parameters
+#Chi-Squared  |beta|/N    Lvl    3:lg10Flux        6:norm    9:lg10Flux       17:norm   20:lg10Flux       23:norm   26:lg10Flux       34:norm   37:lg10Flux       40:norm   43:lg10Flux       51:norm
+#4.78073e+13  1.64657e+13   0      -5.02186   3.21674e+12      -5.64499   1.00000e+24     -0.627008   2.72390e+18      -54.6283   3.54029e+18      -5.00940   4.97297e+17      -5.62123   2.92887e+18
+#***Warning: Zero alpha-matrix diagonal element for parameter 26
+#***Warning: Zero alpha-matrix diagonal element for parameter 34
+# Parameter 26 is pegged at -54.6283 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 34 is pegged at 3.54029e+18 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#1.34002e+13  1.22321e+13  -1      -5.02282   1.15384e+12      -5.65006   1.00000e+24     -0.903183   1.00000e+24      -54.6283   3.54029e+18      -5.02574   1.00000e+24      -5.64734   3.88354e+17
+#1.84985e+12  4.40856e+12  -2      -5.01723   1.90683e+11      -5.65347   1.00000e+24      -1.33311   1.00000e+24      -54.6283   3.54029e+18      -5.03173   1.00000e+24      -5.58864   1.08612e+17
+#2.50851e+11  6.08718e+11  -3      -4.98906   1.00000e+24      -5.65901   1.00000e+24      -1.76681   1.00000e+24      -54.6283   3.54029e+18      -5.03183   1.00000e+24      -5.69786   1.00000e+24
+#3.39458e+10  1.15621e+11  -4      -5.01420   1.00000e+24      -5.65386   1.00000e+24      -2.20069   1.00000e+24      -54.6283   3.54029e+18      -5.03165   1.00000e+24      -5.60904   1.00000e+24
+#4.58752e+09  1.56644e+10  -5      -5.01502   1.00000e+24      -5.65386   1.00000e+24      -2.63409   1.00000e+24      -54.6283   3.54029e+18      -5.03165   1.00000e+24      -5.61673   1.00000e+24
+#6.17744e+08  2.12315e+09  -6      -5.01502   1.00000e+24      -5.65386   1.00000e+24      -3.06624   1.00000e+24      -54.6283   3.54029e+18      -5.03165   1.00000e+24      -5.61682   1.00000e+24
+#8.2333e+07   2.88103e+08  -7      -5.01502   1.00000e+24      -5.65386   1.00000e+24      -3.49507   1.00000e+24      -54.6283   3.54029e+18      -5.03165   1.00000e+24      -5.61682   1.00000e+24
+#1.06642e+07  3.91922e+07  -8      -5.01502   1.00000e+24      -5.65386   1.00000e+24      -3.91521   1.00000e+24      -54.6283   3.54029e+18      -5.03165   1.00000e+24      -5.61682   1.00000e+24
+#1.27742e+06  5.36201e+06  -9      -5.01502   1.00000e+24      -5.65386   1.00000e+24      -4.31293   1.00000e+24      -54.6283   3.54029e+18      -5.03165   1.00000e+24      -5.61682   1.00000e+24
+#124245       742548      -10      -5.01502   1.00000e+24      -5.65386   1.00000e+24      -4.65659   1.00000e+24      -54.6283   3.54029e+18      -5.03165   1.00000e+24      -5.61682   1.00000e+24
+#7925.35      104427      -11      -5.01502   1.00000e+24      -5.65386   1.00000e+24      -4.89173   1.00000e+24      -54.6283   3.54029e+18      -5.03165   1.00000e+24      -5.61682   1.00000e+24
+#1536.82      13936.3     -12      -5.01502   1.00000e+24      -5.65386   1.00000e+24      -4.98437   1.00000e+24      -54.6283   3.54029e+18      -5.03165   1.00000e+24      -5.61682   1.00000e+24
+#1470.53      1141.28     -13      -5.01502   1.00000e+24      -5.65386   1.00000e+24      -4.99599   1.00000e+24      -54.6283   3.54029e+18      -5.03165   1.00000e+24      -5.61682   1.00000e+24
+#1470.51      17.137      -14      -5.01502   1.00000e+24      -5.65386   1.00000e+24      -4.99617   1.00000e+24      -54.6283   3.54029e+18      -5.03165   1.00000e+24      -5.61682   1.00000e+24
+#1470.51      0.0413443   -15      -5.01502   1.00000e+24      -5.65386   1.00000e+24      -4.99617   1.00000e+24      -54.6283   3.54029e+18      -5.03165   1.00000e+24      -5.61682   1.00000e+24
+#***Warning: Zero alpha-matrix diagonal element for parameter 26
+#***Warning: Zero alpha-matrix diagonal element for parameter 34
+# Parameter 26 is pegged at -54.6283 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 34 is pegged at 3.54029e+18 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#1470.51      4.55376e-05   3      -5.01502   3.22788e+19      -5.65386   1.00000e+24      -4.99617   4.65385e+18      -54.6283   3.54029e+18      -5.03165   4.00674e+19      -5.61682   1.00000e+24
+#==========================================================================================
+# Variances and Principal Axes
+#                 3        6        9       17       20       23       37       40       43       51  
+# 1.9610E-06|  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   1.0000  -0.0000  
+# 0.0000E+00|  0.0000   0.0000   1.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000  
+# 1.9610E-04|  1.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000  
+# 5.4281E-04|  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   1.0000   0.0000   0.0000   0.0000  
+# 7.3496E-04|  0.0000   0.0000   0.0000   0.0000   1.0000   0.0000   0.0000   0.0000   0.0000   0.0000  
+# 3.9076E+72|  0.0000  -0.9994   0.0000   0.0341   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000  
+# 7.0617E+72|  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000  -0.9994   0.0000   0.0348  
+# 8.7453E+72|  0.0000   0.0000   0.0000   0.0000   0.0000   1.0000   0.0000   0.0000   0.0000   0.0000  
+# 2.8115E+73|  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0348   0.0000   0.9994  
+# 9.5335E+73|  0.0000   0.0341  -0.0000   0.9994   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000  
+#------------------------------------------------------------------------------------------
+#
+#========================================================================================================================
+#  Covariance Matrix
+#        1           2           3           4           5           6           7           8           9          10   
+#   1.961e-04   2.783e+34  -8.558e-05   2.218e+34   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00
+#   2.783e+34   4.014e+72  -1.010e+34   3.114e+72   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00
+#  -8.558e-05  -1.010e+34   9.604e-04  -2.719e+35   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00
+#   2.218e+34   3.114e+72  -2.719e+35   9.523e+73   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00
+#   0.000e+00   0.000e+00   0.000e+00   0.000e+00   7.350e-04   8.005e+34   0.000e+00   0.000e+00   0.000e+00   0.000e+00
+#   0.000e+00   0.000e+00   0.000e+00   0.000e+00   8.005e+34   8.745e+72   0.000e+00   0.000e+00   0.000e+00   0.000e+00
+#   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   5.428e-04   6.175e+34  -7.308e-05   5.650e+33
+#   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   6.175e+34   7.087e+72  -7.084e+33   7.331e+71
+#   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00  -7.308e-05  -7.084e+33   1.402e-03  -1.872e+35
+#   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   5.650e+33   7.331e+71  -1.872e+35   2.809e+73
+#------------------------------------------------------------------------------------------------------------------------
+#
+#========================================================================
+#Model cflux<1>*cutoffpl<2>  + cflux<3>*grbmbb<4> Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#                           Data group: 1
+#   1    1   cflux      Emin       keV      8.00000      frozen
+#   2    1   cflux      Emax       keV      900.000      frozen
+#   3    1   cflux      lg10Flux   cgs      -5.01502     +/-  1.40034E-02  
+#   4    2   cutoffpl   PhoIndex            0.850000     frozen
+#   5    2   cutoffpl   HighECut   keV      370.000      frozen
+#   6    2   cutoffpl   norm                3.22788E+19  +/-  2.00344E+36  
+#   7    3   cflux      Emin       keV      8.00000      frozen
+#   8    3   cflux      Emax       keV      900.000      frozen
+#   9    3   cflux      lg10Flux   cgs      -5.65386     +/-  3.09905E-02  
+#  10    4   grbmbb     Gamma               685.000      frozen
+#  11    4   grbmbb     Alpha               0.520000     frozen
+#  12    4   grbmbb     R0         cm(log)  12.4100      frozen
+#  13    4   grbmbb     T0         keV      1018.00      frozen
+#  14    4   grbmbb     ti         (scale)  110.000      
+#  15    4   grbmbb     tf         (scale)  170.000      
+#  16    4   grbmbb     D          (scale)  1.00000E-02  
+#  17    4   grbmbb     norm                1.00000E+24  +/-  9.75852E+36  
+#                           Data group: 2
+#  18    1   cflux      Emin       keV      8.00000      = p1
+#  19    1   cflux      Emax       keV      900.000      = p2
+#  20    1   cflux      lg10Flux   cgs      -4.99617     +/-  2.71102E-02  
+#  21    2   cutoffpl   PhoIndex            0.850000     = p4
+#  22    2   cutoffpl   HighECut   keV      370.000      = p5
+#  23    2   cutoffpl   norm                4.65385E+18  +/-  2.95724E+36  
+#  24    3   cflux      Emin       keV      8.00000      = p7
+#  25    3   cflux      Emax       keV      900.000      = p8
+#  26    3   cflux      lg10Flux   cgs      -54.6283     +/-  -1.00000     
+#  27    4   grbmbb     Gamma               685.000      = p10
+#  28    4   grbmbb     Alpha               0.520000     = p11
+#  29    4   grbmbb     R0         cm(log)  12.4100      = p12
+#  30    4   grbmbb     T0         keV      1018.00      = p13
+#  31    4   grbmbb     ti         (scale)  110.000      = p14
+#  32    4   grbmbb     tf         (scale)  170.000      = p15
+#  33    4   grbmbb     D          (scale)  1.00000E-02  = p16
+#  34    4   grbmbb     norm                3.54029E+18  +/-  -1.00000     
+#                           Data group: 3
+#  35    1   cflux      Emin       keV      8.00000      = p1
+#  36    1   cflux      Emax       keV      900.000      = p2
+#  37    1   cflux      lg10Flux   cgs      -5.03165     +/-  2.32982E-02  
+#  38    2   cutoffpl   PhoIndex            0.850000     = p4
+#  39    2   cutoffpl   HighECut   keV      370.000      = p5
+#  40    2   cutoffpl   norm                4.00674E+19  +/-  2.66219E+36  
+#  41    3   cflux      Emin       keV      8.00000      = p7
+#  42    3   cflux      Emax       keV      900.000      = p8
+#  43    3   cflux      lg10Flux   cgs      -5.61682     +/-  3.74399E-02  
+#  44    4   grbmbb     Gamma               685.000      = p10
+#  45    4   grbmbb     Alpha               0.520000     = p11
+#  46    4   grbmbb     R0         cm(log)  12.4100      = p12
+#  47    4   grbmbb     T0         keV      1018.00      = p13
+#  48    4   grbmbb     ti         (scale)  110.000      = p14
+#  49    4   grbmbb     tf         (scale)  170.000      = p15
+#  50    4   grbmbb     D          (scale)  1.00000E-02  = p16
+#  51    4   grbmbb     norm                1.00000E+24  +/-  5.29994E+36  
+#________________________________________________________________________
+#
+#
+#Fit statistic  : Chi-Squared                  192.51     using 113 bins, spectrum 1, group 1.
+#                 Chi-Squared                 1096.93     using 111 bins, spectrum 2, group 2.
+#                 Chi-Squared                  181.07     using 112 bins, spectrum 3, group 3.
+#Total fit statistic                          1470.51     with 324 d.o.f.
+#
+#Test statistic : Chi-Squared                 1470.51     using 336 bins.
+# Null hypothesis probability of 2.55e-145 with 324 degrees of freedom
+#
+!XSPEC12> pl
+#
+!XSPEC12> pl ld
+#
+!XSPEC12> show free
+#
+#Free parameters defined:
+#========================================================================
+#Model cflux<1>*cutoffpl<2>  + cflux<3>*grbmbb<4> Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#                           Data group: 1
+#   3    1   cflux      lg10Flux   cgs      -5.01502     +/-  1.40034E-02  
+#   6    2   cutoffpl   norm                3.22788E+19  +/-  2.00344E+36  
+#   9    3   cflux      lg10Flux   cgs      -5.65386     +/-  3.09905E-02  
+#  17    4   grbmbb     norm                1.00000E+24  +/-  9.75852E+36  
+#                           Data group: 2
+#  20    1   cflux      lg10Flux   cgs      -4.99617     +/-  2.71102E-02  
+#  23    2   cutoffpl   norm                4.65385E+18  +/-  2.95724E+36  
+#  26    3   cflux      lg10Flux   cgs      -54.6283     +/-  -1.00000     
+#  34    4   grbmbb     norm                3.54029E+18  +/-  -1.00000     
+#                           Data group: 3
+#  37    1   cflux      lg10Flux   cgs      -5.03165     +/-  2.32982E-02  
+#  40    2   cutoffpl   norm                4.00674E+19  +/-  2.66219E+36  
+#  43    3   cflux      lg10Flux   cgs      -5.61682     +/-  3.74399E-02  
+#  51    4   grbmbb     norm                1.00000E+24  +/-  5.29994E+36  
+#________________________________________________________________________
+#
+#
+!XSPEC12> newpar 26 -5.6
+#
+#Fit statistic  : Chi-Squared                  192.51     using 113 bins, spectrum 1, group 1.
+#                 Chi-Squared                 1017.63     using 111 bins, spectrum 2, group 2.
+#                 Chi-Squared                  181.07     using 112 bins, spectrum 3, group 3.
+#Total fit statistic                          1391.21     with 324 d.o.f.
+#
+#Test statistic : Chi-Squared                 1391.21     using 336 bins.
+# Null hypothesis probability of 5.71e-132 with 324 degrees of freedom
+# Current data and model not fit yet.
+#
+!XSPEC12> pl
+#***Warning: Fit is not current.
+#
+!XSPEC12> fit
+#                                   Parameters
+#Chi-Squared  |beta|/N    Lvl    3:lg10Flux        6:norm    9:lg10Flux       17:norm   20:lg10Flux       23:norm   26:lg10Flux       34:norm   37:lg10Flux       40:norm   43:lg10Flux       51:norm
+#928.582      1622.16      -3      -5.01423   1.00000e+24      -5.63606   1.00000e+24      -5.02898   1.69815e+18      -5.69200   4.05755e+17      -5.06445   1.00000e+24      -5.64034   1.33148e+19
+#835.825      1139.19      -4      -5.01502   1.00000e+24      -5.65345   1.00000e+24      -5.01360   1.00000e+24      -5.62244   1.32752e+17      -5.03103   1.00000e+24      -5.56459   4.39484e+18
+#556.356      1290.89      -5      -5.01502   1.00000e+24      -5.65386   1.00000e+24      -5.03120   1.00000e+24      -5.71328   3.20790e+16      -5.03207   1.00000e+24      -5.62516   5.39506e+17
+#554.503      102.549      -1      -5.01502   1.00000e+24      -5.65386   1.00000e+24      -5.03174   1.00000e+24      -5.70418   1.00000e+24      -5.03155   1.00000e+24      -5.60478   2.63258e+17
+#551.463      110.13        0      -5.01502   1.00000e+24      -5.65386   1.00000e+24      -5.03139   1.00000e+24      -5.69421   1.00000e+24      -5.03178   1.00000e+24      -5.60642   2.70842e+15
+#550.539      52.2016       0      -5.01502   1.00000e+24      -5.65386   1.00000e+24      -5.03142   1.00000e+24      -5.68930   1.00000e+24      -5.03189   1.00000e+24      -5.60826   9.84943e+13
+#550.192      33.396        0      -5.01502   1.00000e+24      -5.65386   1.00000e+24      -5.03156   1.00000e+24      -5.68659   1.00000e+24      -5.03183   1.00000e+24      -5.60966   1.36234e+13
+#549.786      29.4903       0      -5.01502   1.00000e+24      -5.65386   1.00000e+24      -5.03169   1.00000e+24      -5.68494   1.00000e+24      -5.03197   1.00000e+24      -5.61281   6.77427e+12
+#549.612      10.3637      -1      -5.01502   1.00000e+24      -5.65386   1.00000e+24      -5.03204   1.00000e+24      -5.68206   1.00000e+24      -5.03174   1.00000e+24      -5.61642   1.76992e+12
+#549.612      3.00111       0      -5.01502   1.00000e+24      -5.65386   1.00000e+24      -5.03205   1.00000e+24      -5.68203   1.00000e+24      -5.03174   1.00000e+24      -5.61646   4.89288e+11
+#549.611      1.76354       0      -5.01503   1.00000e+24      -5.65392   1.00000e+24      -5.03205   1.00000e+24      -5.68199   2.48638e+19      -5.03174   2.01445e+19      -5.61646   1.78624e+11
+#==========================================================================================
+# Variances and Principal Axes
+#                 3        6        9       17       20       23       26       34       37       40       43       51  
+# 2.3865E-06|  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000  -0.0000   1.0000  -0.0000  
+# 0.0000E+00|  0.0000  -0.0000   1.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000  
+# 0.0000E+00|  0.0000   0.0000   0.0000   0.0000   0.0000  -0.0000   1.0000   0.0000   0.0000   0.0000   0.0000   0.0000  
+# 2.3865E-04|  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   1.0000   0.0000   0.0000   0.0000  
+# 3.4241E-04|  0.0000   0.0000   0.0000   0.0000   1.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000  
+# 4.3971E-04|  1.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000  
+# 3.8525E+49|  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   1.0000  
+# 4.5157E+72|  0.0000   0.9806   0.0000   0.1959   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000  
+# 4.8024E+72|  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000  -1.0000   0.0000   0.0000  
+# 5.0263E+72|  0.0000   0.0000   0.0000   0.0000   0.0000  -1.0000  -0.0000  -0.0059   0.0000   0.0000   0.0000   0.0000  
+# 4.5271E+73|  0.0000  -0.1959  -0.0000   0.9806   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000  
+# 1.2930E+75|  0.0000   0.0000   0.0000   0.0000   0.0000  -0.0059  -0.0000   1.0000   0.0000   0.0000   0.0000   0.0000  
+#------------------------------------------------------------------------------------------
+#
+#================================================================================================================================================
+#  Covariance Matrix
+#        1           2           3           4           5           6           7           8           9          10          11          12   
+#   4.397e-04   5.151e+34   2.361e-04  -6.861e+34   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00
+#   5.151e+34   6.080e+72   2.841e+34  -7.831e+72   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00
+#   2.361e-04   2.841e+34   8.849e-04  -1.748e+35   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00
+#  -6.861e+34  -7.831e+72  -1.748e+35   4.371e+73   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00
+#   0.000e+00   0.000e+00   0.000e+00   0.000e+00   3.424e-04   4.139e+34   3.687e-05  -3.533e+34   0.000e+00   0.000e+00   0.000e+00   0.000e+00
+#   0.000e+00   0.000e+00   0.000e+00   0.000e+00   4.139e+34   5.071e+72   1.207e+34  -7.554e+72   0.000e+00   0.000e+00   0.000e+00   0.000e+00
+#   0.000e+00   0.000e+00   0.000e+00   0.000e+00   3.687e-05   1.207e+34   3.824e-03  -2.163e+36   0.000e+00   0.000e+00   0.000e+00   0.000e+00
+#   0.000e+00   0.000e+00   0.000e+00   0.000e+00  -3.533e+34  -7.554e+72  -2.163e+36   1.293e+75   0.000e+00   0.000e+00   0.000e+00   0.000e+00
+#   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   2.386e-04   3.350e+34  -1.940e-05   7.273e+20
+#   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   3.350e+34   4.802e+72   5.022e+32  -1.317e+59
+#   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00  -1.940e-05   5.022e+32   7.827e-04  -1.557e+23
+#   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   7.273e+20  -1.317e+59  -1.557e+23   3.853e+49
+#------------------------------------------------------------------------------------------------------------------------------------------------
+#
+#========================================================================
+#Model cflux<1>*cutoffpl<2>  + cflux<3>*grbmbb<4> Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#                           Data group: 1
+#   1    1   cflux      Emin       keV      8.00000      frozen
+#   2    1   cflux      Emax       keV      900.000      frozen
+#   3    1   cflux      lg10Flux   cgs      -5.01503     +/-  2.09693E-02  
+#   4    2   cutoffpl   PhoIndex            0.850000     frozen
+#   5    2   cutoffpl   HighECut   keV      370.000      frozen
+#   6    2   cutoffpl   norm                1.00000E+24  +/-  2.46586E+36  
+#   7    3   cflux      Emin       keV      8.00000      frozen
+#   8    3   cflux      Emax       keV      900.000      frozen
+#   9    3   cflux      lg10Flux   cgs      -5.65392     +/-  2.97472E-02  
+#  10    4   grbmbb     Gamma               685.000      frozen
+#  11    4   grbmbb     Alpha               0.520000     frozen
+#  12    4   grbmbb     R0         cm(log)  12.4100      frozen
+#  13    4   grbmbb     T0         keV      1018.00      frozen
+#  14    4   grbmbb     ti         (scale)  110.000      
+#  15    4   grbmbb     tf         (scale)  170.000      
+#  16    4   grbmbb     D          (scale)  1.00000E-02  
+#  17    4   grbmbb     norm                1.00000E+24  +/-  6.61108E+36  
+#                           Data group: 2
+#  18    1   cflux      Emin       keV      8.00000      = p1
+#  19    1   cflux      Emax       keV      900.000      = p2
+#  20    1   cflux      lg10Flux   cgs      -5.03205     +/-  1.85044E-02  
+#  21    2   cutoffpl   PhoIndex            0.850000     = p4
+#  22    2   cutoffpl   HighECut   keV      370.000      = p5
+#  23    2   cutoffpl   norm                1.00000E+24  +/-  2.25180E+36  
+#  24    3   cflux      Emin       keV      8.00000      = p7
+#  25    3   cflux      Emax       keV      900.000      = p8
+#  26    3   cflux      lg10Flux   cgs      -5.68199     +/-  6.18369E-02  
+#  27    4   grbmbb     Gamma               685.000      = p10
+#  28    4   grbmbb     Alpha               0.520000     = p11
+#  29    4   grbmbb     R0         cm(log)  12.4100      = p12
+#  30    4   grbmbb     T0         keV      1018.00      = p13
+#  31    4   grbmbb     ti         (scale)  110.000      = p14
+#  32    4   grbmbb     tf         (scale)  170.000      = p15
+#  33    4   grbmbb     D          (scale)  1.00000E-02  = p16
+#  34    4   grbmbb     norm                2.48638E+19  +/-  3.59580E+37  
+#                           Data group: 3
+#  35    1   cflux      Emin       keV      8.00000      = p1
+#  36    1   cflux      Emax       keV      900.000      = p2
+#  37    1   cflux      lg10Flux   cgs      -5.03174     +/-  1.54482E-02  
+#  38    2   cutoffpl   PhoIndex            0.850000     = p4
+#  39    2   cutoffpl   HighECut   keV      370.000      = p5
+#  40    2   cutoffpl   norm                2.01445E+19  +/-  2.19143E+36  
+#  41    3   cflux      Emin       keV      8.00000      = p7
+#  42    3   cflux      Emax       keV      900.000      = p8
+#  43    3   cflux      lg10Flux   cgs      -5.61646     +/-  2.79764E-02  
+#  44    4   grbmbb     Gamma               685.000      = p10
+#  45    4   grbmbb     Alpha               0.520000     = p11
+#  46    4   grbmbb     R0         cm(log)  12.4100      = p12
+#  47    4   grbmbb     T0         keV      1018.00      = p13
+#  48    4   grbmbb     ti         (scale)  110.000      = p14
+#  49    4   grbmbb     tf         (scale)  170.000      = p15
+#  50    4   grbmbb     D          (scale)  1.00000E-02  = p16
+#  51    4   grbmbb     norm                1.78624E+11  +/-  6.20717E+24  
+#________________________________________________________________________
+#
+#
+#Fit statistic  : Chi-Squared                  192.51     using 113 bins, spectrum 1, group 1.
+#                 Chi-Squared                  176.03     using 111 bins, spectrum 2, group 2.
+#                 Chi-Squared                  181.07     using 112 bins, spectrum 3, group 3.
+#Total fit statistic                           549.61     with 324 d.o.f.
+#
+#Test statistic : Chi-Squared                  549.61     using 336 bins.
+# Null hypothesis probability of 6.82e-14 with 324 degrees of freedom
+#
+!XSPEC12> pl
+#
+!XSPEC12> pl eeuf
+#
+!XSPEC12> err 3 9 20 26 37 43
+# Parameter   Confidence Range (2.706)
+#     3     -5.01794     -5.01213    (-0.00291378,0.00289825)
+#     9     -5.67682     -5.63203    (-0.022892,0.0219019)
+#    20     -5.03547     -5.02883    (-0.00340531,0.00323728)
+#    26     -5.70558     -5.65842    (-0.0235366,0.0236271)
+#    37     -5.03529     -5.02804    (-0.00356825,0.00368557)
+#    43     -5.63778     -5.59684    (-0.0213246,0.0196176)
+#
+# XSPEC: quit
+#
