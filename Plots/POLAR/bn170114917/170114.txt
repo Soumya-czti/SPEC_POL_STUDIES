@@ -1,0 +1,214 @@
+#XSPEC version: 12.14.0h
+#Build Date/Time: Fri Jun 14 22:36:15 2024
+#
+!XSPEC12> show free
+#
+#Free parameters defined:
+#========================================================================
+#Model cflux<1>*powerlaw<2>  + cflux<3>*grbmbb<4> Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#                           Data group: 1
+#   3    1   cflux      lg10Flux   cgs      -6.24732     +/-  2.27901E-02  
+#   5    2   powerlaw   norm                2.42434E+19  +/-  6.59595E+36  
+#   8    3   cflux      lg10Flux   cgs      -6.58937     +/-  7.24817E-02  
+#  16    4   grbmbb     norm                4.39723E+19  +/-  1.59195E+37  
+#                           Data group: 2
+#  19    1   cflux      lg10Flux   cgs      -6.30060     +/-  4.09763E-02  
+#  24    3   cflux      lg10Flux   cgs      -6.55145     +/-  2.79878E-02  
+#  32    4   grbmbb     norm                1.00000E+24  +/-  1.61284E+37  
+#                           Data group: 3
+#  35    1   cflux      lg10Flux   cgs      -5.58612     +/-  4.41579E-02  
+#  40    3   cflux      lg10Flux   cgs      -6.86492     +/-  1.48449      
+#  48    4   grbmbb     norm                4.56521E+19  +/-  1.35089E+38  
+#________________________________________________________________________
+#
+#
+!XSPEC12> err 3 8 19 24 35 40
+# Parameter   Confidence Range (2.706)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -6.28283, -6.28296
+#and delta stat 2.6855, 2.771
+#but latest trial -6.28286 gives 2.67575
+#Suggest that you check this result using the steppar command.
+#     3     -6.28289     -6.20221    (-0.0355722,0.0451124)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -6.5417, -6.54167
+#and delta stat 2.67354, 2.7231
+#but latest trial -6.54168 gives 2.73915
+#Suggest that you check this result using the steppar command.
+#     8      -6.6655     -6.54169    (-0.0761303,0.0476831)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -6.33227, -6.33244
+#and delta stat 2.67554, 2.7238
+#but latest trial -6.33238 gives 2.28925
+#Suggest that you check this result using the steppar command.
+#    19     -6.33236     -6.27121    (-0.0317533,0.0293941)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -6.51543, -6.51543
+#and delta stat 2.62853, 2.73905
+#but latest trial -6.51543 gives 2.78237
+#Suggest that you check this result using the steppar command.
+#    24     -6.59905     -6.51543    (-0.0475953,0.0360202)
+#                                   Parameters
+#PG-Statistic |beta|/N    Lvl    3:lg10Flux        5:norm    8:lg10Flux       16:norm   19:lg10Flux   24:lg10Flux       32:norm   35:lg10Flux   40:lg10Flux       48:norm
+#434.782      2.02849       0      -6.24733   1.00000e+24      -6.58960   1.45505e+19      -6.30082      -6.55120   1.00000e+24      -5.65773      -6.74574   1.00000e+24
+#434.782      1.98823       9      -6.24733   2.20499e+19      -6.58960   8.33014e+17      -6.30082      -6.55120   4.66931e+19      -5.65773      -6.74574   1.00000e+24
+#==========================================================================================
+# Variances and Principal Axes
+#                 3        5        8       16       19       24       32       35       40       48  
+# 8.6883E-06|  0.0000  -0.0000  -1.0000  -0.0000   0.0000  -0.0000  -0.0000   0.0000   0.0000   0.0000  
+# 8.6883E-06|  0.0000   0.0000  -0.0000  -0.0000  -1.0000   0.0000   0.0000  -0.0000  -0.0000   0.0000  
+# 8.6883E-06|  0.0000   0.0000   0.0000  -0.0000  -0.0000  -1.0000   0.0000  -0.0000   0.0000   0.0000  
+# 8.6883E-06|  0.0000   0.0000  -0.0000   0.0000  -0.0000  -0.0000   0.0000   0.7071  -0.7071   0.0000  
+# 8.6883E-04|  1.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000  
+# 1.2800E+03|  0.0000  -0.0000  -0.0000  -0.0000   0.0000   0.0000  -0.0000  -0.7071  -0.7071   0.0000  
+# 8.5333E+64|  0.0000   0.0000  -0.0000   1.0000  -0.0000   0.0000   0.0000  -0.0000   0.0000  -0.0000  
+# 3.5442E+73|  0.0000   0.9837  -0.0000  -0.0000  -0.0000   0.0000   0.1795  -0.0000   0.0000  -0.0009  
+# 2.4142E+74|  0.0000  -0.1795  -0.0000   0.0000  -0.0000  -0.0000   0.9837   0.0000  -0.0000   0.0012  
+# 4.4983E+75|  0.0000  -0.0011   0.0000   0.0000   0.0000  -0.0000   0.0010  -0.0000  -0.0000  -1.0000  
+#------------------------------------------------------------------------------------------
+#
+#========================================================================================================================
+#  Covariance Matrix
+#        1           2           3           4           5           6           7           8           9          10   
+#   8.688e-04  -1.382e+35  -5.220e-04   1.126e+30   9.446e-04  -8.176e-04   1.195e+35   2.000e-04  -3.373e-04  -1.633e+34
+#  -1.382e+35   4.209e+73  -8.414e+32  -1.356e+68  -2.876e+35   2.490e+35  -3.639e+73  -6.090e+34   1.027e+35   4.973e+72
+#  -5.220e-04  -8.414e+32   1.053e-03  -1.664e+30   5.750e-06  -4.977e-06   7.274e+32   1.217e-06  -2.053e-06  -9.942e+31
+#   1.126e+30  -1.356e+68  -1.664e+30   8.577e+64   9.266e+29  -8.021e+29   1.172e+68   1.962e+29  -3.309e+29  -1.602e+67
+#   9.446e-04  -2.876e+35   5.750e-06   9.266e+29   2.216e-03  -1.891e-03   2.348e+35   4.162e-04  -7.018e-04  -3.399e+34
+#  -8.176e-04   2.490e+35  -4.977e-06  -8.021e+29  -1.891e-03   7.161e-03  -1.242e+36  -3.603e-04   6.075e-04   2.942e+34
+#   1.195e+35  -3.639e+73   7.274e+32   1.172e+68   2.348e+35  -1.242e+36   2.348e+74   5.265e+34  -8.879e+34  -4.300e+72
+#   2.000e-04  -6.090e+34   1.217e-06   1.962e+29   4.162e-04  -3.603e-04   5.265e+34   3.302e-03   1.802e-02   1.580e+36
+#  -3.373e-04   1.027e+35  -2.053e-06  -3.309e+29  -7.018e-04   6.075e-04  -8.879e+34   1.802e-02   7.928e-01   5.955e+37
+#  -1.633e+34   4.973e+72  -9.942e+31  -1.602e+67  -3.399e+34   2.942e+34  -4.300e+72   1.580e+36   5.955e+37   4.498e+75
+#------------------------------------------------------------------------------------------------------------------------
+#
+#========================================================================
+#Model cflux<1>*powerlaw<2>  + cflux<3>*grbmbb<4> Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#                           Data group: 1
+#   1    1   cflux      Emin       keV      8.00000      frozen
+#   2    1   cflux      Emax       keV      900.000      frozen
+#   3    1   cflux      lg10Flux   cgs      -6.24733     +/-  2.94759E-02  
+#   4    2   powerlaw   PhoIndex            1.56880      frozen
+#   5    2   powerlaw   norm                2.20499E+19  +/-  6.48750E+36  
+#   6    3   cflux      Emin       keV      8.00000      frozen
+#   7    3   cflux      Emax       keV      900.000      frozen
+#   8    3   cflux      lg10Flux   cgs      -6.58960     +/-  3.24471E-02  
+#   9    4   grbmbb     Gamma               100.000      frozen
+#  10    4   grbmbb     Alpha               0.580918     frozen
+#  11    4   grbmbb     R0         cm(log)  10.5000      frozen
+#  12    4   grbmbb     T0         keV      450.000      frozen
+#  13    4   grbmbb     ti         (scale)  10.0000      
+#  14    4   grbmbb     tf         (scale)  12.0000      
+#  15    4   grbmbb     D          (scale)  1.00000E-02  
+#  16    4   grbmbb     norm                8.33014E+17  +/-  2.92864E+32  
+#                           Data group: 2
+#  17    1   cflux      Emin       keV      8.00000      frozen
+#  18    1   cflux      Emax       keV      900.000      frozen
+#  19    1   cflux      lg10Flux   cgs      -6.30082     +/-  4.70709E-02  
+#  20    2   powerlaw   PhoIndex            1.56880      = p4
+#  21    2   powerlaw   norm                2.20499E+19  = p5
+#  22    3   cflux      Emin       keV      8.00000      frozen
+#  23    3   cflux      Emax       keV      900.000      frozen
+#  24    3   cflux      lg10Flux   cgs      -6.55120     +/-  8.46246E-02  
+#  25    4   grbmbb     Gamma               100.000      = p9
+#  26    4   grbmbb     Alpha               0.580918     = p10
+#  27    4   grbmbb     R0         cm(log)  10.5000      = p11
+#  28    4   grbmbb     T0         keV      450.000      = p12
+#  29    4   grbmbb     ti         (scale)  10.0000      = p13
+#  30    4   grbmbb     tf         (scale)  12.0000      = p14
+#  31    4   grbmbb     D          (scale)  1.00000E-02  = p15
+#  32    4   grbmbb     norm                4.66931E+19  +/-  1.53227E+37  
+#                           Data group: 3
+#  33    1   cflux      Emin       keV      8.00000      frozen
+#  34    1   cflux      Emax       keV      4.00000E+04  frozen
+#  35    1   cflux      lg10Flux   cgs      -5.65773     +/-  5.74634E-02  
+#  36    2   powerlaw   PhoIndex            1.56880      = p4
+#  37    2   powerlaw   norm                2.20499E+19  = p5
+#  38    3   cflux      Emin       keV      8.00000      frozen
+#  39    3   cflux      Emax       keV      4.00000E+04  frozen
+#  40    3   cflux      lg10Flux   cgs      -6.74574     +/-  0.890383     
+#  41    4   grbmbb     Gamma               100.000      = p9
+#  42    4   grbmbb     Alpha               0.580918     = p10
+#  43    4   grbmbb     R0         cm(log)  10.5000      = p11
+#  44    4   grbmbb     T0         keV      450.000      = p12
+#  45    4   grbmbb     ti         (scale)  10.0000      = p13
+#  46    4   grbmbb     tf         (scale)  12.0000      = p14
+#  47    4   grbmbb     D          (scale)  1.00000E-02  = p15
+#  48    4   grbmbb     norm                1.00000E+24  +/-  6.70694E+37  
+#________________________________________________________________________
+#
+#
+#Fit statistic  : PG-Statistic                 109.93     using 112 bins, spectrum 1, group 1.
+#                 PG-Statistic                 173.37     using 113 bins, spectrum 2, group 2.
+#                 PG-Statistic                 151.49     using 128 bins, spectrum 3, group 3.
+#Total fit statistic                           434.78     with 343 d.o.f.
+#
+#Test statistic : Chi-Squared                  455.32     using 353 bins.
+# Null hypothesis probability of 4.46e-05 with 343 degrees of freedom
+#***Warning: New best fit found, fit parameters will be set to new values.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -6.24733, -6.28014
+#and delta stat 0, 2.75318
+#but latest trial -6.27972 gives 3.22787
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -6.21181, -6.21126
+#and delta stat 2.49595, 3.00809
+#but latest trial -6.21154 gives 2.3155
+#Suggest that you check this result using the steppar command.
+#     3     -6.26373     -6.21154    (-0.0169682,0.0352261)
+#     8     -6.64408     -6.54967    (-0.0543884,0.0400206)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -6.33008, -6.33012
+#and delta stat 2.5918, 2.81915
+#but latest trial -6.3301 gives 2.51352
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -6.28736, -6.27569
+#and delta stat 0.926542, 2.78421
+#but latest trial -6.27608 gives 3.46572
+#Suggest that you check this result using the steppar command.
+#    19      -6.3301     -6.28152    (-0.0285194,0.020061)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -6.55448, -6.60206
+#and delta stat 0, 3.4275
+#but latest trial -6.59576 gives 3.54714
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -6.52488, -6.51954
+#and delta stat 1.92126, 2.91545
+#but latest trial -6.52058 gives 3.63098
+#Suggest that you check this result using the steppar command.
+#    24     -6.57827     -6.52221    (-0.0237929,0.0322692)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -5.76125, -5.76134
+#and delta stat 2.69089, 2.742
+#but latest trial -5.76128 gives 2.66782
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -5.5638, -5.56337
+#and delta stat 2.67669, 2.85926
+#but latest trial -5.56373 gives 2.61979
+#Suggest that you check this result using the steppar command.
+#    35      -5.7613     -5.56358    (-0.114157,0.0835566)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -6.9148, -6.91711
+#and delta stat 2.64389, 2.79551
+#but latest trial -6.91564 gives 2.59752
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -6.61794, -6.617
+#and delta stat 2.63682, 2.81987
+#but latest trial -6.61747 gives 2.59681
+#Suggest that you check this result using the steppar command.
+#    40     -6.91596     -6.61747    (-0.156697,0.141791)
+#
+!XSPEC12> pl
+!XSPEC12> save all 170114A.xcm
+#
+# XSPEC: quit
+#
